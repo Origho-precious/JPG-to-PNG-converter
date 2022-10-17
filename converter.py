@@ -3,7 +3,7 @@ from PIL import Image
 
 try:
     image_folder, new_folder = tuple(
-        input('Enter image folder and new folder name: ').split(' '))
+        input('Enter name of folder containing the JPEGs and a folder you want to convert PNGs into: ').split(' '))
 
     # check if the new folder exists
     if os.path.exists(new_folder) is False:
