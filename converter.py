@@ -18,7 +18,7 @@ try:
                 try:
                     new_file_name = f.split('/')[1].replace('.jpg', '.png')
                     img = Image.open(f)
-                    img.save(f'{new_folder}{new_file_name}')
+                    img.save(f'{new_folder}{new_file_name}', 'png')
                 except OSError as error:
                     print('Something went wrong', error)
     else:
